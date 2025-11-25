@@ -278,3 +278,7 @@ func getConsoleAnimatedLogin() bool {
 func getConsoleBrowserRedirectURL() string {
 	return env.Get(ConsoleBrowserRedirectURL, "")
 }
+
+func getConsoleUseProxyForSharedURL() bool {
+	return strings.ToLower(env.Get(ConsoleUseProxyForSharedURL, "on")) == "on"
+}
